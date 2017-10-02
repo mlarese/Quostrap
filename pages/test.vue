@@ -1,19 +1,15 @@
 <template>
-    <div>
-        <div class="row">
-            <div class="col-xs-6" style="background-color:red">
-                red
+    <div class="container">
+            <div class="col-lg-12">
+                <title-bar title="Anagrafico"/>
             </div>
-            <div class="col-xs-6" style="background-color:yellow">
-                yellow
-            </div>
-        </div>
     </div>
 </template>
-
 <script>
+  import Avatar from '../components/avatar/Avatar'
+  import TitleBar from '../components/titlebar/TitleBar'
   export default {
-    components: {},
+    components: {Avatar, TitleBar},
     props: []
   }
 </script>
