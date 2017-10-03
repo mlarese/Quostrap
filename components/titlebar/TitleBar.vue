@@ -1,6 +1,7 @@
 <template>
    <div class="row"><h4>{{title}}</h4>
-    <i class="fa fa-pencil" aria-hidden="true" style="float: right"></i></div>
+    <i class="fa fa-pencil" aria-hidden="true" style="float: right;"></i>
+   </div>
 </template>
 
 <script>
@@ -11,6 +12,8 @@
 
 <style>
     .row{
-        border-bottom: 1px black solid;
+        border-bottom: 2px solid black;
     }
+
+
 </style>

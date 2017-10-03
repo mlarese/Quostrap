@@ -6,7 +6,7 @@
             CODICE UTENTI {{code}}
         </div>
         <div class="row">
-            Iscritto dal 15.01.2016 {{date}}</div>
+            Iscritto dal  {{date}}</div>
     </div>
 </template>
 
