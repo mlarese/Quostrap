@@ -1,11 +1,11 @@
 <template>
-    <div class="container">
+    <div>
     <div class="row">
         <div class="col-xs-4 col-lg-4">
             Nome: <br> <b style="color: blue">{{name}}</b>
         </div>
         <div class="col-xs-4 col-lg-4">
-            Cognome: <br> <b style="color: blue">{{cognome}}</b>
+            Cognome: <br> <b style="color: blue">{{surname}}</b>
         </div>
         <div class="col-xs-4 col-lg-4">
             Indirizo email: <br> <b style="color: blue"> <a href="mailto:mariorosi@gmail.com">{{email}}</a> </b>
