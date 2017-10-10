@@ -1,5 +1,5 @@
 <template>
-    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+    <div>
         <div class="row">
             <img :src="avatar" class="img-circle" style="height: 200px; width: 200px; float: left;" alt="User Image"></div>
         <div class="row ">
