@@ -2,31 +2,6 @@
 
     <div class="bound_box ST2-book STSS__accList">
 
-            <div class="ST2-book__top">
-                <div class="col-md-6"><h2 class="ST2-book__title--opt">Personalizza Soggiorno</h2></div>
-                <div class="col-md-6 no-p-r">
-                    <button class="ST2-book__disc-code pull-right">Hai un codice sconto?</button>
-                    <div class="ST2-book__dropdown pull-right">
-                        <button aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" type="button" id="dLabel">
-                            Euro
-                            <span class="caret"></span>
-                        </button>
-                        <ul aria-labelledby="dLabel" class="dropdown-menu">
-                            <li><a href="#">Dollaro</a></li>
-                        </ul>
-                    </div>
-                    <div class="ST2-book__dropdown pull-right">
-                        <button aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" type="button" id="dLabel">
-                            Italiano
-                            <span class="caret"></span>
-                        </button>
-                        <ul aria-labelledby="dLabel" class="dropdown-menu">
-                            <li><a href="#">English</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
             <div class="col-xs-12 col-md-8 no-p-l STSS__content">
                 <form>
                     <div class="ST2-book__slider">
