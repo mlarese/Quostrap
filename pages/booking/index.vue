@@ -11,7 +11,9 @@
                         <div><input type="radio" value="Servizi speciali" id="optRadio4" name="optRadio"><label for="optRadio4">Servizi speciali</label></div>
                     </div>
                 </form>
+
                 <span class="ST2-book__choose">Scegli i servizi che renderanno unico il tuo soggiorno, altrimenti premi il pulsante "prosegui".</span>
+
                 <div class="elementAccessories STSS__accItem">
                     <div class="col-xs-12 col-sm-7 no-p-l">
                         <img src="images/img_service01.jpg" class="pull-left">
