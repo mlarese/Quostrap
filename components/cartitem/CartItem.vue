@@ -11,6 +11,7 @@
             c168.988,0,306-137.012,306-306S475.008,0,306,0z M306,573.75C158.125,573.75,38.25,453.875,38.25,306\n
             C38.25,158.125,158.125,38.25,306,38.25c147.875,0,267.75,119.875,267.75,267.75C573.75,453.875,453.875,573.75,306,573.75z"></path>
             </g></g></g></svg></a>
+
             <div class="STSS__roomsNew__item__ssr__qty pull-left">
                 <span class="STSS__roomsNew__item__ssr__qty__label">Q.ta</span>
                 <select aria-hidden="true" tabindex="-1" id="accessorySel_3" name="accessorySel[3]" class="STSS__roomsNew__item__ssr__qty__select select2-hidden-accessible">
