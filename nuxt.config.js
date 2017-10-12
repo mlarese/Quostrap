@@ -25,7 +25,10 @@ module.exports = {
   ** Build configuration
   */
   css: ['bootstrap/dist/css/bootstrap.css'],
-  plugins: ['~plugins/bootstrap.js'],
+  plugins: [
+    '~plugins/bootstrap.js',
+    { src: '~plugins/i18n.js', injectAs: 'i18n' }
+  ],
   build: {
     vendor: ['jquery', 'bootstrap'],
     plugins: [

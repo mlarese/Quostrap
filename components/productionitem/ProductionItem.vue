@@ -35,7 +35,7 @@
         </div>
         <div class="col-xs-12 col-sm-5 STSS__accItem__priceNew STSS__accItem__priceNew--add no-p-l">
             <small>Totale</small>
-            <span class="STSS__accItem__qty__label">Quantità</span>
+            <span class="STSS__accItem__qty__label">{{$t('Quantity')}}</span>
             <em>{{totAmt}}<sup>,{{decAmt}}</sup></em>
             <div class="STSS__accItem__qty pull-left">
                 <select aria-hidden="true" tabindex="-1" id="accessorySel_3" name="accessorySel[3]" class="selectAccessories select2-hidden-accessible">
