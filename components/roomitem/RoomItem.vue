@@ -1,7 +1,7 @@
 <template>
     <div class="row" style="background-color: lightgrey">
-    <img :src="avatar" class="pull-left STSS__roomsNew__item__image">
-    <h4 class="STSS__roomsNew__item__title text-uppercase">{{minTitle}}</h4>
+    <img :src="image" class="pull-left STSS__roomsNew__item__image">
+    <h4 class="STSS__roomsNew__item__title text-uppercase">{{description}}</h4>
     <div class="STSS__roomsNew__item__desc">
         <svg xml:space="preserve" viewBox="0 0 59.178 59.178" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-ico" style="enable-background:new 0 0 59.178 59.178;"><g><g>
             <path d="M57.285,56.028H36.721c7.051-2.708,12.247-9.182,13.078-16.957h2.018\n
@@ -24,7 +24,7 @@
             c0.408-0.281,3.974-2.842,3.637-6.126c-0.207-2.013-1.773-3.649-4.619-4.85c-0.744-0.337-1.581-1.058-1.572-1.353\n
             c0-0.009,0.169-0.906,3.369-2.13c0.773-0.297,1.161-1.164,0.865-1.938c-0.295-0.772-1.161-1.16-1.937-0.865\n
             c-3.505,1.342-5.238,2.926-5.295,4.842C34.774,7.648,37.833,9.111,38.219,9.285z"></path>
-            </g></g></svg><span>{{detTitle}}</span></div>
+            </g></g></svg><span>{{detDescrip}}</span></div>
             <div class="STSS__roomsNew__item__price"><del>{{prevAmt}}</del><span>{{discount}}%</span>
                 <em>{{totAmt}}<sup>,{{decAmt}}</sup></em></div>
     </div>
@@ -33,13 +33,13 @@
 <script>
   export default {
     props: {
-      minTitle: {default: 'TRIPLIA DELUXE'},
-      avatar: {default: '../images/rooms_01.jpg'},
-      totAmt: {default: '£453'},
-      decAmt: {default: 99},
-      prevAmt: {default: '£546'},
+      description: {default: 'TRIPLIA DELUXE'},
+      image: {default: '../images/rooms_01.jpg'},
+      totalAmount: {default: '£453'},
+      decimalAmount: {default: 99},
+      previousAmount: {default: '£546'},
       discount: {default: 20},
-      detTitle: {default: 'Mezza Penzione'}
+      detailedDescription: {default: 'Mezza Penzione'}
     }
   }
 </script>

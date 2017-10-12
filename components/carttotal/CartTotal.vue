@@ -10,9 +10,9 @@
 <script>
   export default {
     props: {
-      totPrc: {default: '£ 233'},
-      decAmt: {default: 56},
-      saveAmt: {default: '£ 542'}
+      totalAmount: {default: '£233'},
+      decimalAmount: {default: 56},
+      savedAmount: {default: '£ 542'}
     }
   }
 </script>

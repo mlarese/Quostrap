@@ -1,9 +1,9 @@
 <template>
     <div class="elementAccessories STSS__accItem">
         <div class="col-xs-12 col-sm-7 no-p-l">
-            <img :src="avatar" class="pull-left">
+            <img :src="image" class="pull-left">
             <div class="descriptionAccessories STSS__accItem__desc STSS__accItem__desc--acc">
-                <div class="accessoryName text-uppercase">{{minTitle}}</div>
+                <div class="accessoryName text-uppercase">{{description}}</div>
                 <div aria-multiselectable="true" role="tablist" class="panel-group">
                     <div class="panel panel-default"><div id="headingOne" role="tab" class="panel-heading">
                         <span class="STSS__accItem__desc__short hidden-xs">{{paragraph}}</span>
@@ -61,6 +61,9 @@
                 </span>
             </div>
             <button type="submit" class="STSS__accItem__priceNew__button text-uppercase pull-right">
+                {{nameBtn}}
+            </button>
+            <button type="submit" class="STSS__accItem__priceNew__button text-uppercase pull-right">
         Aggiunto
         <svg xml:space="preserve" enable-background="new 0 0 78 57" viewBox="0 0 78 57" height="57px" width="78px" y="0px" x="0px" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
             <g>
@@ -78,12 +81,13 @@
 <script>
   export default {
     props: {
-      avatar: {default: '../images/img_service01.jpg'},
-      minTitle: {default: 'INGRESSO CENTRO TERMALE'},
+      image: {default: '../images/img_service01.jpg'},
+      description: {default: 'INGRESSO CENTRO TERMALE'},
       paragraph: {default: 'cahshhsajsjjajsh shbjhsa shhsankhkuwhuyu nabshbuwq'},
-      detParagraph: {default: 'sabjbhajbhjsbjadbjabhdjhbjjhbjh'},
-      totAmt: {default: '£455'},
-      decAmt: {default: '45'}
+      detailedParagraph: {default: 'sabjbhajbhjsbjadbjabhdjhbjjhbjh'},
+      totalAmount: {default: '£455'},
+      decimalAmount: {default: '45'},
+      nameButton: {default: 'aggiungi'}
     }
   }
 </script>

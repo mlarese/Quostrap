@@ -1,7 +1,7 @@
 <template>
     <div class="STSS__roomsNew__item__ssr col-xs-12 no-p-r" style="background-color:ghostwhite">
         <div>
-     <strong>{{minTitle}}</strong>
+     <strong>{{description}}</strong>
     <a href="#" class="STSS__roomsNew__item__ssr__remove">
         <svg xml:space="preserve" viewBox="0 0 612 612" height="612px" width="612px" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-ico">
             <g><g><g><path d="M415.338,196.662c-7.535-7.535-19.737-7.535-27.253,0l-82.181,82.18l-81.033-81.032c-7.478-7.478-19.584-7.478-27.042,0\n
@@ -43,11 +43,11 @@
 <script>
   export default {
     props: {
-      minTitle: {default: 'transfer to aeroporto di vce'},
-      prevAmt: {default: '£1020'},
+      description: {default: 'transfer to aeroporto di vce'},
+      previousAmount: {default: '£1020'},
       discount: {default: -32},
-      totAmt: {default: '£4200'},
-      decAmt: {default: 34}
+      totalAmount: {default: '£4200'},
+      decimalAmount: {default: 34}
     }
   }
 </script>
