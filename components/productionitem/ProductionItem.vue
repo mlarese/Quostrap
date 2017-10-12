@@ -9,7 +9,7 @@
                         <span class="STSS__accItem__desc__short hidden-xs">{{paragraph}}</span>
                         <a aria-controls="collapse-1" aria-expanded="true" href="#collapse-1" data-parent="#accordion" data-toggle="collapse" role="button" class="collapsed STSS__accItem__desc__tgl">
         Dettagli               </a></div><div aria-labelledby="heading-1" role="tabpanel" id="collapse-1" class="panel-collapse collapse STSS__accItem__desc__tgl-txt">
-                        <div class="panel-body"><p>{{detParagraph}}</p></div>
+                        <div class="panel-body"><p>{{detailedParagraph}}</p></div>
                     </div>
                     </div>
                     <form class="form-horizontal" role="form">
@@ -64,7 +64,7 @@
                 Seleziona
             </button>
             <button type="submit" class="STSS__accItem__priceNew__button text-uppercase pull-right">
-                Aggiunto</button>
+                Aggiunto
         <svg xml:space="preserve" enable-background="new 0 0 78 57" viewBox="0 0 78 57" height="57px" width="78px" y="0px" x="0px" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
             <g>
             <path d="M78.049,8.572l-48.59,48.591c-0.428,0.429-1.121,0.429-1.548,0L0.32,29.572\n
