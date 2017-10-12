@@ -24,9 +24,9 @@
             c0.408-0.281,3.974-2.842,3.637-6.126c-0.207-2.013-1.773-3.649-4.619-4.85c-0.744-0.337-1.581-1.058-1.572-1.353\n
             c0-0.009,0.169-0.906,3.369-2.13c0.773-0.297,1.161-1.164,0.865-1.938c-0.295-0.772-1.161-1.16-1.937-0.865\n
             c-3.505,1.342-5.238,2.926-5.295,4.842C34.774,7.648,37.833,9.111,38.219,9.285z"></path>
-            </g></g></svg><span>{{detDescrip}}</span></div>
-            <div class="STSS__roomsNew__item__price"><del>{{prevAmt}}</del><span>{{discount}}%</span>
-                <em>{{totAmt}}<sup>,{{decAmt}}</sup></em></div>
+            </g></g></svg><span>{{detailedDescription}}</span></div>
+            <div class="STSS__roomsNew__item__price"><del>{{previousAmount}}</del><span>{{discount}}%</span>
+                <em>{{totalAmount}}<sup>,{{decimalAmount}}</sup></em></div>
     </div>
 </template>
 

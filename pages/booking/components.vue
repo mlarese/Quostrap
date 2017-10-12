@@ -12,7 +12,7 @@
     <div class="col-lg-4">
         <cart-item/>
     </div>
-        <div class="col-lg-6">
+        <div class="col-lg-12">
             <production-item/>
         </div>
     </div>

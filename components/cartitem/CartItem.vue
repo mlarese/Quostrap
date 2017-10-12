@@ -36,7 +36,7 @@
                 </span>
             </span>
             </div>
-         <div class="STSS__roomsNew__item__price pull-right"><del>{{prevAmt}}</del><span>{{discount}}%</span><em>{{totAmt}}<sup>,{{decAmt}}</sup></em></div>
+         <div class="STSS__roomsNew__item__price pull-right"><del>{{previousAmount}}</del><span>{{discount}}%</span><em>{{totalAmount}}<sup>,{{decimalAmount}}</sup></em></div>
      </div>
     </div>
 </template>

@@ -36,7 +36,7 @@
         <div class="col-xs-12 col-sm-5 STSS__accItem__priceNew STSS__accItem__priceNew--add no-p-l">
             <small>Totale</small>
             <span class="STSS__accItem__qty__label">{{$t('Quantity')}}</span>
-            <em>{{totAmt}}<sup>,{{decAmt}}</sup></em>
+            <em>{{totalAmount}}<sup>,{{decimalAmount}}</sup></em>
             <div class="STSS__accItem__qty pull-left">
                 <select aria-hidden="true" tabindex="-1" id="accessorySel_3" name="accessorySel[3]" class="selectAccessories select2-hidden-accessible">
                     <option value="0">0</option>
@@ -60,11 +60,11 @@
                     </span>
                 </span>
             </div>
-            <button type="submit" class="STSS__accItem__priceNew__button text-uppercase pull-right">
-                {{nameBtn}}
+            <button data-target="#modalDet" data-toggle="modal" type="submit" class="STSS__accItem__priceNew__button text-uppercase pull-right">
+                Seleziona
             </button>
             <button type="submit" class="STSS__accItem__priceNew__button text-uppercase pull-right">
-        Aggiunto
+                Aggiunto</button>
         <svg xml:space="preserve" enable-background="new 0 0 78 57" viewBox="0 0 78 57" height="57px" width="78px" y="0px" x="0px" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
             <g>
             <path d="M78.049,8.572l-48.59,48.591c-0.428,0.429-1.121,0.429-1.548,0L0.32,29.572\n
@@ -86,8 +86,8 @@
       paragraph: {default: 'cahshhsajsjjajsh shbjhsa shhsankhkuwhuyu nabshbuwq'},
       detailedParagraph: {default: 'sabjbhajbhjsbjadbjabhdjhbjjhbjh'},
       totalAmount: {default: '£455'},
-      decimalAmount: {default: '45'},
-      nameButton: {default: 'aggiungi'}
+      decimalAmount: {default: 45},
+      Quantity: {default: 3}
     }
   }
 </script>

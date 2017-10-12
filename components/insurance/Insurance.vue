@@ -11,7 +11,7 @@
                 </g></g></g></svg></a>
         <div class="STSS__roomsNew__acc__price text-right">
             <b class="STSS__roomsNew__total__label">Totale assicurazione</b>
-            <em class="STSS__roomsNew__total__price">{{totAmt}}<sup>,{{decAmt}}</sup></em>
+            <em class="STSS__roomsNew__total__price">{{totalAmount}}<sup>,{{decimalAmount}}</sup></em>
         </div>
         <i class="STSS__roomsNew__acc__msg">{{textMsg}}</i>
         <div class="STSS__roomsNew__send text-center"><button class="btn form-control text-uppercase">prosegui</button>
@@ -24,8 +24,8 @@
   export default {
     props: {
       textMsg: {default: 'il pagamento della polizza assicurativa avviene in modi separato'},
-      totAmt: {default: '£900'},
-      decAmt: {default: 67}
+      totalAmount: {default: '£900'},
+      decimalAmount: {default: 67}
     }
   }
 </script>
