@@ -60,7 +60,7 @@
                     </span>
                 </span>
             </div>
-            <button data-target="#modalDet" data-toggle="modal" type="submit" class="STSS__accItem__priceNew__button text-uppercase pull-right">
+            <button data-target="#modalDet" data-toggle="modal" type="submit" class="STSS__accItem__priceNew__button text-uppercase pull-right ">
                 Seleziona
             </button>
             <button type="submit" class="STSS__accItem__priceNew__button text-uppercase pull-right">
@@ -93,5 +93,16 @@
 </script>
 
 <style>
-
+    .STSS__accItem__priceNew button {
+        border: 2px solid #ef8b33;
+        border-radius: 2px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 12px;
+        color: #ef8b33;
+        background: transparent;
+        height: 42px;
+        line-height: 42px;
+        width: 115px;
+    }
 </style>
