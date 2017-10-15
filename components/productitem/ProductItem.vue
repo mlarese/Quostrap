@@ -8,13 +8,13 @@
                     <div class="panel panel-default"><div id="headingOne" role="tab" class="panel-heading">
                         <span class="STSS__accItem__desc__short hidden-xs">{{paragraph}}</span>
                         <a aria-controls="collapse-1" aria-expanded="true" href="#collapse-1" data-parent="#accordion" data-toggle="collapse" role="button" class="collapsed STSS__accItem__desc__tgl">
-        Dettagli               </a></div><div aria-labelledby="heading-1" role="tabpanel" id="collapse-1" class="panel-collapse collapse STSS__accItem__desc__tgl-txt">
+                            {{$t('Details')}}               </a></div><div aria-labelledby="heading-1" role="tabpanel" id="collapse-1" class="panel-collapse collapse STSS__accItem__desc__tgl-txt">
                         <div class="panel-body"><p>{{detailedParagraph}}</p></div>
                     </div>
                     </div>
                     <form class="form-horizontal" role="form">
                         <div class="form-group">
-                            <label for="basic" class="col-xs-2 col-lg-2 control-label">Select</label>
+                            <label for="basic" class="col-xs-2 col-lg-2 control-label"></label>
                             <div class="col-lg-2">
                                 <select id="basic" class="selectpicker show-tick form-control">
                                     <option>cow</option>
@@ -34,7 +34,7 @@
 
         </div>
         <div class="col-xs-12 col-sm-5 STSS__accItem__priceNew STSS__accItem__priceNew--add no-p-l">
-            <small>Totale</small>
+            <small>{{$t('Total')}}</small>
             <span class="STSS__accItem__qty__label">{{$t('Quantity')}}</span>
             <em>{{totalAmount}}<sup>,{{decimalAmount}}</sup></em>
             <div class="STSS__accItem__qty pull-left">
@@ -60,26 +60,25 @@
                     </span>
                 </span>
             </div>
-            <button data-target="#modalDet" data-toggle="modal" type="submit" class="STSS__accItem__priceNew__button text-uppercase pull-right ">
-                Seleziona
+            <button @click="onAdd"  data-target="#modalDet" data-toggle="modal" class="STSS__accItem__priceNew__button text-uppercase pull-right ">
+                {{$t('Add')}}
             </button>
-            <button type="submit" class="STSS__accItem__priceNew__button text-uppercase pull-right">
-                Aggiunto
-        <svg xml:space="preserve" enable-background="new 0 0 78 57" viewBox="0 0 78 57" height="57px" width="78px" y="0px" x="0px" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
-            <g>
-            <path d="M78.049,8.572l-48.59,48.591c-0.428,0.429-1.121,0.429-1.548,0L0.32,29.572\n
-                c-0.427-0.426-0.427-1.119,0-1.547l6.704-6.704c0.428-0.427,1.121-0.427,1.548,0l20.113,20.112L69.798,0.32\n
-                c0.43-0.427,1.12-0.427,1.549,0l6.702,6.704C78.478,7.451,78.478,8.144,78.049,8.572">
-            </path>
-            </g>
-        </svg>
+            <button class="STSS__accItem__priceNew__button text-uppercase pull-right">
+                {{$t('Added')}}
+                <icon-tick />
             </button>
         </div>
     </div>
 </template>
 
 <script>
+  import IconTick from '../../Icons/IconTick'
   export default {
+    methods: {
+      onAdd () {
+        this.$emit('on-add')
+      }
+    },
     props: {
       image: {default: '../images/img_service01.jpg'},
       description: {default: 'INGRESSO CENTRO TERMALE'},
@@ -88,21 +87,11 @@
       totalAmount: {default: '£455'},
       decimalAmount: {default: 45},
       Quantity: {default: 3}
-    }
+    },
+    components: {IconTick}
   }
 </script>
 
 <style>
-    .STSS__accItem__priceNew button {
-        border: 2px solid #ef8b33;
-        border-radius: 2px;
-        text-align: center;
-        font-weight: 700;
-        font-size: 12px;
-        color: #ef8b33;
-        background: transparent;
-        height: 42px;
-        line-height: 42px;
-        width: 115px;
-    }
+
 </style>

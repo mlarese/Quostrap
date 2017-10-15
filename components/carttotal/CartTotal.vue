@@ -1,9 +1,9 @@
 <template>
     <div class="STSS__roomsNew__total text-right">
-        <a href="#" class="STSS__roomsNew__total__link">Condizioni di prenotazione</a>
-        <strong class="STSS__roomsNew__total__label">Totale soggiorno</strong>
-        <em class="STSS__roomsNew__total__price">{{totalAmount}}<sup>,{{decimalAmount}}</sup></em>
-        <span class="STSS__roomsNew__total__highlight">Stai risparmiando {{savedAmount}}</span>
+        <a href="#" class="STSS__roomsNew__total__link">{{$t('booking conditions')}}</a>
+        <strong class="STSS__roomsNew__total__label">{{$t('Total stay')}}</strong>
+        <em class="STSS__roomsNew__total__price"> {{totalAmount}}<sup>,{{decimalAmount}}</sup></em>
+        <span class="STSS__roomsNew__total__highlight">{{$t('You are saving')}} {{savedAmount}}</span>
     </div>
 </template>
 

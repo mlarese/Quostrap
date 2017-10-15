@@ -13,19 +13,19 @@
         <cart-item/>
     </div>
         <div class="col-lg-12">
-            <production-item/>
+            <product-item/>
         </div>
     </div>
 </template>
 
 <script>
   import CartTotal from '../../components/carttotal/CartTotal'
-  import ProductionItem from '../../components/productionitem/ProductionItem'
+  import ProductItem from '../../components/productitem/ProductItem'
   import RoomItem from '../../components/roomitem/RoomItem'
   import Insurance from '../../components/insurance/Insurance'
   import CartItem from '../../components/cartitem/CartItem'
   export default {
-    components: {CartTotal, ProductionItem, RoomItem, Insurance, CartItem},
+    components: {CartTotal, ProductItem, RoomItem, Insurance, CartItem},
     props: []
   }
 </script>
