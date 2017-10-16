@@ -1,12 +1,13 @@
 <template>
-    <div>
-
+    <div class="row">
+        <description-user/>
     </div>
 </template>
 
 <script>
+  import DescriptionUser from '../../components/descriptionuser/DescriptionUser'
   export default {
-    components: {},
+    components: { DescriptionUser },
     props: []
   }
 </script>
