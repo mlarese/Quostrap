@@ -5,9 +5,9 @@
                 <em class="icon-globe fa-3x"></em>
             </div>
             <div class="col-xs-8 pv-lg"><div class="h2 mt0" :style="{color}">{{value}}
-            <small :style="{color}">{{labelIfAny}}</small>
+            <small :style="{color}">{{subValue}}</small>
             </div>
-                <div class="text-uppercase":style="{color}">{{label}}</div>
+                <div class="text-uppercase":style="{color}">{{description}}</div>
             </div>
          </div>
     </div>
@@ -20,8 +20,8 @@
       backgroundColorDark: {default: '#564aa3'},
       color: {default: 'white'},
       value: {default: 7257},
-      labelIfAny: {default: 'TB'},
-      label: {default: 'QUOTA'}
+      subValue: {default: 'TB'},
+      description: {default: 'QUOTA'}
     }
   }
 </script>

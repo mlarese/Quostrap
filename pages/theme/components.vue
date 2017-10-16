@@ -1,13 +1,14 @@
 <template>
     <div class="row">
-        <description-user/>
+        <monthly-percentage/>
     </div>
 </template>
 
 <script>
-  import DescriptionUser from '../../components/descriptionuser/DescriptionUser'
+  import colorWidget from '../../components/colorWidget/colorWidget'
+  import monthlyPercentage from '../../components/monthlypercentage/monthlyPercentage'
   export default {
-    components: { DescriptionUser },
+    components: { colorWidget, monthlyPercentage },
     props: []
   }
 </script>
