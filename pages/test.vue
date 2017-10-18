@@ -14,7 +14,6 @@
 
 </template>
 <script>
-  import Avatar from '../components/avatar/Avatar'
   import TitleBar from '../components/titlebar/TitleBar'
   import UserInfo from '../components/userinfo/UserInfo'
   import PersonalInfo from '../components/userinfo/PersonalInfo'
@@ -22,9 +21,9 @@
   import InputGroupAmt from '../components/input-group/InputGroupAmt'
   import BtnGroup from '../components/avatar/btngroup/BtnGroup'
   import Prenotations from '../components/prenotations/Prenotations'
-  import AvatarWithIconGroup from '../components/avatar/AvatarWithIconGroup'
+
   export default {
-    components: {Avatar, TitleBar, UserInfo, PersonalInfo, InputGroup, InputGroupAmt, BtnGroup, Prenotations, AvatarWithIconGroup},
+    components: {TitleBar, UserInfo, PersonalInfo, InputGroup, InputGroupAmt, BtnGroup, Prenotations},
     props: []
   }
 </script>

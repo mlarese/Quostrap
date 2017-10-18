@@ -5,7 +5,7 @@
             <a href="#" class="text-muted pull-right"><em class="fa fa-arrow-right"></em></a>
             <div class="text-info">{{$t('Average Monthly Uploads')}}</div>
             <div class="text-center pv-xl">
-                <span>{{percentage}}</span>
+                <span><h2>{{percentage}}</h2></span>
             </div>
         </div>
         <div data-values="5,4,8,7,8,5,4,6,5,5,9,4,6,3,4,7,5,4,7" data-bar-spacing="2" data-bar-width="5" data-height="30" data-bar-color="#23b7e5" data-sparkline="" class="text-center"></div>

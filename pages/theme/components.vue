@@ -1,14 +1,61 @@
 <template>
     <div class="row">
-        <monthly-percentage/>
+        <div class="col-lg-12">
+            <value-panel/>
+        </div>
+        <div class="col-lg-12">
+            <avatar-user/>
+        </div>
+        <div class="col-lg-12">
+            <comments/>
+        </div>
+        <div class="col-lg-12">
+            <avatar-follow/>
+        </div>
+        <div class="col-lg-12">
+            <reminder-date/>
+        </div>
+        <div class="col-lg-12">
+            <avatar-info/>
+        </div>
+        <div class="col-lg-12">
+            <avatar-details/>
+        </div>
+        <div class="col-lg-12">
+            <avatar-description/>
+        </div>
+        <div class="col-lg-12">
+            <weather/>
+        </div>
+        <div class="col-lg-12">
+            <icon-info/>
+        </div>
+        <div class="col-lg-12">
+            <avatar-list/>
+        </div>
+        <div class="col-lg-12">
+            <icon-list/>
+        </div>
+
     </div>
 </template>
 
 <script>
-  import colorWidget from '../../components/colorWidget/colorWidget'
-  import monthlyPercentage from '../../components/monthlypercentage/monthlyPercentage'
+  import ColorWidget from '../../components/colorwidget/ColorWidget'
+  import ValuePanel from '../../components/valuepanel/ValuePanel'
+  import AvatarUser from '../../components/avatar/AvatarUser'
+  import Comments from '../../components/comments/Comments'
+  import AvatarFollow from '../../components/avatar/AvatarFollow'
+  import ReminderDate from '../../components/reminderdate/ReminderDate'
+  import AvatarInfo from '../../components/avatar/AvatarInfo'
+  import AvatarDetails from '../../components/avatar/AvatarDetails'
+  import AvatarDescription from '../../components/avatar/AvatarDescription'
+  import Weather from '../../components/weather/Weather'
+  import IconInfo from '../../components/iconlist/IconInfo'
+  import AvatarList from '../../components/avatarlist/AvatarList'
+  import IconList from '../../components/iconlist/IconList'
   export default {
-    components: { colorWidget, monthlyPercentage },
+    components: { ColorWidget, ValuePanel, AvatarUser, Comments, AvatarFollow, ReminderDate, AvatarInfo, AvatarDetails, AvatarDescription, Weather, IconInfo, AvatarList, IconList },
     props: []
   }
 </script>
