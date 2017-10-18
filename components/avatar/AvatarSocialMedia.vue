@@ -1,6 +1,6 @@
 <template>
     <div class="panel widget">
-        <div class="panel-body text-center bg-center" style="background-image: url('img/bg4.jpg')">
+        <div class="panel-body text-center bg-center" :style="backgroundImage">
             <div class="row row-table">
                 <div class="col-xs-12 text-white">
                     <img alt="Image" :src="avatar" class="img-thumbnail img-circle thumb128">
@@ -19,14 +19,14 @@
         </div>
         <div class="list-group">
             <a href="#" class="list-group-item">
-                <span class="label label-primary pull-right">15</span>
+                <span class="label label-primary pull-right">{{totalActivity}}</span>
                 <em class="fa fa-fw fa-clock-o text-muted">
                 </em>Recent Activity</a>
             <a href="#" class="list-group-item">
-                <span class="label label-primary pull-right">100</span>
+                <span class="label label-primary pull-right">{{totalFollowing}}</span>
                 <em class="fa fa-fw fa-user text-muted"></em>Following</a>
             <a href="#" class="list-group-item">
-                <span class="label label-primary pull-right">300</span>
+                <span class="label label-primary pull-right">{{totalPhotos}}</span>
                 <em class="fa fa-fw fa-folder-open-o text-muted"></em>Photos</a>
         </div>
     </div>
@@ -34,7 +34,14 @@
 
 <script>
   export default {
-    props: []
+    props: {
+      backgroundImage: {default: '../images/flowers.jpg'},
+      avatar: {default: '../images/img_service01.jpg'},
+      avatarName: {default: 'Picasso'},
+      totalActivity: {default: 3},
+      totalFollowing: {default: 23},
+      totalPhotos: {default: 43}
+    }
   }
 </script>
 
