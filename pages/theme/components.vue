@@ -39,6 +39,9 @@
         <div class="col-lg-12">
             <avatar-social-media/>
         </div>
+        <div class="col-lg-12">
+            <progress-bar/>
+        </div>
 
     </div>
 </template>
@@ -58,8 +61,9 @@
   import AvatarList from '../../components/avatarlist/AvatarList'
   import IconList from '../../components/iconlist/IconList'
   import AvatarSocialMedia from '../../components/avatar/AvatarSocialMedia'
+  import ProgressBar from '../../components/progressbar/ProgressBar'
   export default {
-    components: { ColorWidget, ValuePanel, AvatarUser, Comments, AvatarFollow, ReminderDate, AvatarInfo, AvatarDetails, AvatarDescription, Weather, IconInfo, AvatarList, IconList, AvatarSocialMedia },
+    components: { ColorWidget, ValuePanel, AvatarUser, Comments, AvatarFollow, ReminderDate, AvatarInfo, AvatarDetails, AvatarDescription, Weather, IconInfo, AvatarList, IconList, AvatarSocialMedia, ProgressBar },
     props: []
   }
 </script>

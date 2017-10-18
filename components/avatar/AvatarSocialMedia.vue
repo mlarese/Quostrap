@@ -1,6 +1,6 @@
 <template>
     <div class="panel widget">
-        <div class="panel-body text-center bg-center" :style="backgroundImage">
+        <div class="panel-body text-center bg-center" :style="backgroundImages">
             <div class="row row-table">
                 <div class="col-xs-12 text-white">
                     <img alt="Image" :src="avatar" class="img-thumbnail img-circle thumb128">
@@ -35,7 +35,7 @@
 <script>
   export default {
     props: {
-      backgroundImage: {default: '../images/flowers.jpg'},
+      backgroundImages: {default: '../images/flowers.jpg'},
       avatar: {default: '../images/img_service01.jpg'},
       avatarName: {default: 'Picasso'},
       totalActivity: {default: 3},
