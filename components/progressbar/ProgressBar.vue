@@ -7,7 +7,7 @@
             </div>
             <div class="pv-lg">
             </div>
-            <p><small class="text-muted">Actual progress</small></p>
+            <p><small class="text-muted">{{$t('Actual progress')}}</small></p>
             <div class="progress progress-xs">
                 <div aria-valuemax="100" aria-valuemin="0" :aria-valuenow="80" role="progressbar" class="progress-bar progress-bar-info progress-bar-striped" :style="{width: percentage + '%'}">
                     <span class="sr-only">{{percentage}}</span>
@@ -21,7 +21,7 @@
   export default {
     props: {
       number: {default: 200},
-      percentage: {default: 92}
+      percentage: {default: 10}
     }
   }
 </script>

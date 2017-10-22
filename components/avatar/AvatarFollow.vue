@@ -7,10 +7,10 @@
                 </div>
                 <div class="col-xs-6">
                     <div class="pull-right">
-                        <a href="#" class="btn btn-success">Follow</a>
+                        <a href="#" class="btn btn-success">{{$t('Follow')}}</a>
                     </div>
                     <h3 class="mt0">{{avatarName}}</h3>
-                    <p class="text-muted">{{numberFollowing}} Following / {{numberFollowers}} Followers</p>
+                    <p class="text-muted">{{numberFollowing}} {{$t('Following')}} / {{numberFollowers}} {{$t('Followers')}}</p>
                 </div>
             </div>
         </div>

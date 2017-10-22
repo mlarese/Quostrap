@@ -15,15 +15,15 @@
             <div class="row row-table">
                 <div class="col-xs-4">
                     <h3 class="m0">{{totalPhotos}}</h3>
-                    <p class="m0">Photos</p>
+                    <p class="m0">{{$t('Photos')}}</p>
                 </div>
                 <div class="col-xs-4">
                     <h3 class="m0">{{totalLikes}}</h3>
-                    <p class="m0">Likes</p>
+                    <p class="m0">{{$t('likes')}}</p>
                 </div>
                 <div class="col-xs-4">
                     <h3 class="m0">{{totalFollowing}}</h3>
-                    <p class="m0">Following</p>
+                    <p class="m0">{{$t('Following')}}</p>
                 </div>
             </div>
         </div>

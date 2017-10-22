@@ -1,7 +1,7 @@
 <template>
     <div class="panel panel-default">
         <div class="panel-heading">
-            <div class="panel-title">Latest activities</div>
+            <div class="panel-title">{{$t('Latest activities')}}</div>
         </div>
         <div class="list-group">
             <icon-activities/>
@@ -14,7 +14,7 @@
                 label="NEW DOCUMENT"
             />
         </div>
-        <div class="panel-footer clearfix"><a href="#" class="pull-left"><small>Load more</small></a>
+        <div class="panel-footer clearfix"><a href="#" class="pull-left"><small>{{$t('Load more')}}</small></a>
         </div>
     </div>
 </template>

@@ -5,7 +5,7 @@
                 <div class="col-xs-12 text-white">
                     <img alt="Image" :src="avatar" class="img-thumbnail img-circle thumb128">
                     <h3 class="m0">{{avatarName}}</h3>
-                    <p class="m0"><em class="fa fa-twitter fa-fw"></em>@chris</p>
+                    <p class="m0"><em class="fa fa-twitter fa-fw"></em>@ {{subName}}</p>
                 </div>
             </div>
         </div>
@@ -21,13 +21,13 @@
             <a href="#" class="list-group-item">
                 <span class="label label-primary pull-right">{{totalActivity}}</span>
                 <em class="fa fa-fw fa-clock-o text-muted">
-                </em>Recent Activity</a>
+                </em>{{$t('Recent Activity')}}</a>
             <a href="#" class="list-group-item">
                 <span class="label label-primary pull-right">{{totalFollowing}}</span>
-                <em class="fa fa-fw fa-user text-muted"></em>Following</a>
+                <em class="fa fa-fw fa-user text-muted"></em> {{$t('Following')}}</a>
             <a href="#" class="list-group-item">
                 <span class="label label-primary pull-right">{{totalPhotos}}</span>
-                <em class="fa fa-fw fa-folder-open-o text-muted"></em>Photos</a>
+                <em class="fa fa-fw fa-folder-open-o text-muted"></em> {{$t('Photos')}}</a>
         </div>
     </div>
 </template>
@@ -40,7 +40,8 @@
       avatarName: {default: 'Picasso'},
       totalActivity: {default: 3},
       totalFollowing: {default: 23},
-      totalPhotos: {default: 43}
+      totalPhotos: {default: 43},
+      subName: {default: 'Picasso'}
     }
   }
 </script>

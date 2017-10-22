@@ -2,7 +2,7 @@
     <div class="panel widget">
         <div class="panel-body bg-purple text-center">
             <p><img alt="" :src="avatarBody" class="img-rounded thumb80"></p>
-            <p><strong>{{avatarName}}</strong><span> is now following you</span></p>
+            <p><strong>{{avatarName}}</strong><span> {{$t('is now following you')}}</span></p>
         </div>
     </div>
 </template>

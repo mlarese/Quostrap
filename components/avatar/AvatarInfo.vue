@@ -2,16 +2,16 @@
     <div class="panel widget">
         <div class="panel-body bg-danger text-center">
             <div class="clearfix">
-                <div class="pull-left">{{numberFollowing}} Following</div>
-                <div class="pull-right">{{numberFollowers}} Followers</div>
+                <div class="pull-left">{{numberFollowing}} {{$t('Following')}}</div>
+                <div class="pull-right">{{numberFollowers}} {{$t('Followers')}}</div>
             </div>
             <img alt="Image" :src="avatarBody" class="img-thumbnail img-circle thumb96">
             <h4 class="mt0">{{avatarName}}</h4>
             <p class="m0">
                 <em :class="icon"></em>{{city}}, {{state}}</p>
             <div class="clearfix">
-                <div class="pull-left">{{totalLikes}} Likes</div>
-                <div class="pull-right">{{totalFeeds}} Feeds</div>
+                <div class="pull-left">{{totalLikes}} {{$t('Likes')}}</div>
+                <div class="pull-right">{{totalFeeds}} {{$t('Feeds')}}</div>
             </div>
         </div>
     </div>

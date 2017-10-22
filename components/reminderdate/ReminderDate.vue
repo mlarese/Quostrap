@@ -7,7 +7,7 @@
                 </picture>
             </div>
             <div class="col-xs-7 align-middle p-lg">
-                <div class="pull-right"><a href="#" class="btn btn-primary btn-sm">Register</a>
+                <div class="pull-right"><a href="#" class="btn btn-primary btn-sm">{{$t('Register')}}</a>
                 </div>
                 <p><span class="text-lg">{{day}}</span>{{month}}</p>
                 <p><strong>{{description}}</strong></p>

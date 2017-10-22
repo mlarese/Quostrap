@@ -4,14 +4,14 @@
         <div class="panel-body">
             <div class="row row-table text-center">
                 <div class="col-xs-4">
-                    <p>Comments</p>
+                    <p>{{$t('Comments')}}</p>
                     <h3 class="m0 text-primary">{{totalComments}}</h3>
                 </div>
                 <div class="col-xs-4">
-                    <p>Likes</p>
+                    <p>{{$t('likes')}}</p>
                     <h3 class="m0 text-primary">{{totalLikes}}</h3>
                 </div><div class="col-xs-4">
-                <p>Shots</p>
+                <p>{{$t('Shots')}}</p>
                 <h3 class="m0 text-primary">{{totalShots}}</h3>
             </div>
             </div>

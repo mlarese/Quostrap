@@ -6,7 +6,7 @@
             labelColor="pull-right label label-success"
             />
 
-            <div class="panel-title">Team messages</div>
+            <div class="panel-title">{{$t('Team messages')}}</div>
         </div>
         <div data-scrollable="" data-height="180" class="list-group">
             <user-message/>
