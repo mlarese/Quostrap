@@ -37,7 +37,7 @@
       avatarCircle: {default: '../../images/img_service01.jpg'},
       avatarName: {default: 'Mauro Micasso'},
       title: {default: 'Lead Director'},
-      paragraph: {default: 'Proin metus justo, commodo in ultrices at, lobortis sit amet dui. Fusce dolor purus, adipiscing a tempus at, gravida vel purus.'},
+      description: {default: 'Proin metus justo, commodo in ultrices at, lobortis sit amet dui. Fusce dolor purus, adipiscing a tempus at, gravida vel purus.'},
       totalPhotos: {default: 5434},
       totalLikes: {default: 3432},
       totalFollowing: {default: 4626}

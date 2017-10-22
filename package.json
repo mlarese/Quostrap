@@ -1,7 +1,7 @@
 {
   "name": "quostrap",
   "version": "1.0.0",
-  "description": "Nuxt.js project",
+  "name": "Nuxt.js project",
   "author": "Courage <acourage91@gmail.com>",
   "private": true,
   "scripts": {

@@ -23,7 +23,7 @@
       iconType: {default: 'fa fa-cloud-upload fa-stack-1x fa-inverse text-white'},
       duration: {default: '20hrs'},
       label: {default: 'NEW FILE'},
-      description: {default: 'Bootstrap.xls'},
+      name: {default: 'Bootstrap.xls'},
       textColor: {default: 'text-purple m0'}
     }
   }

@@ -39,10 +39,10 @@
   import IconTick from '../../Icons/IconTick'
   export default {
     props: {
-      description: {default: 'transfer to aeroporto di vce'},
+      name: {default: 'transfer to aeroporto di vce'},
       previousAmount: {default: '£1020'},
       discount: {default: -32},
-      totalAmount: {default: '£4200'},
+      price: {default: '£4200'},
       decimalAmount: {default: 34}
     },
     components: {IconTick}

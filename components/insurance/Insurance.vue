@@ -19,7 +19,7 @@
   export default {
     props: {
       textMsg: {default: 'il pagamento della polizza assicurativa avviene in modi separato'},
-      totalAmount: {default: '£900'},
+      price: {default: '£900'},
       decimalAmount: {default: 67}
     },
     components: {IconTick}

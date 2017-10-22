@@ -21,7 +21,7 @@
       color: {default: 'white'},
       value: {default: 7257},
       subValue: {default: 'TB'},
-      description: {default: 'QUOTA'}
+      name: {default: 'QUOTA'}
     }
   }
 </script>

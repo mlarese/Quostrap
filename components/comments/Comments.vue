@@ -24,7 +24,7 @@
   export default {
     props: {
       number: {default: 43},
-      description: {default: 'New Comments'},
+      name: {default: 'New Comments'},
       iconFooter: {default: 'fa fa-chevron-circle-left'}
     }
   }

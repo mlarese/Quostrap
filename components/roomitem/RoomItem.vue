@@ -14,9 +14,9 @@
   import IconTick from '../../Icons/IconTick'
   export default {
     props: {
-      description: {default: 'TRIPLIA DELUXE'},
+      name: {default: 'TRIPLIA DELUXE'},
       image: {default: '../images/rooms_01.jpg'},
-      totalAmount: {default: '£453'},
+      price: {default: '£453'},
       decimalAmount: {default: 99},
       previousAmount: {default: '£546'},
       discount: {default: 20},

@@ -21,7 +21,7 @@
       avatar: {default: '../images/img_service01.jpg'},
       duration: {default: '5hrs'},
       avatarName: {default: 'Jessica Picasso'},
-      paragraph: {default: 'Cras sit amet nibh libero, in gravida nulla. Nulla facilisi.'},
+      description: {default: 'Cras sit amet nibh libero, in gravida nulla. Nulla facilisi.'},
       colorCircle: {default: 'circle circle-success circle-lg text-left'}
     }
   }

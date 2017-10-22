@@ -19,7 +19,7 @@
     props: {
       avatar: {default: '../images/img_service01.jpg'},
       temperature: {default: '21°'},
-      description: {default: 'Sunny Day'},
+      name: {default: 'Sunny Day'},
       icon: {default: 'fa fa-sun-o fa-2x'},
       backgroundColor: {default: 'yellow'},
       color: {default: 'white'}

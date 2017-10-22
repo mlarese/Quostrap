@@ -23,8 +23,8 @@
       avatar: {default: '../images/img_service02.jpg'},
       day: {default: 31},
       month: {default: 'Mag'},
-      paragraph: {default: 'Donec posuere neque in elit luctus tempor consequat enim egestas. Nulla dictum egestas leo at lobortis.'},
-      description: {default: 'EVENT INVITATION'}
+      description: {default: 'Donec posuere neque in elit luctus tempor consequat enim egestas. Nulla dictum egestas leo at lobortis.'},
+      name: {default: 'EVENT INVITATION'}
     }
   }
 </script>
