@@ -1,7 +1,6 @@
 {
-  "name": "quostrap",
+  "name": "Nuxtproject",
   "version": "1.0.0",
-  "name": "Nuxt.js project",
   "author": "Courage <acourage91@gmail.com>",
   "private": true,
   "scripts": {
@@ -14,15 +13,17 @@
   },
   "dependencies": {
     "@nuxtjs/font-awesome": "^1.0.2",
+    "axios": "^0.16.2",
+    "axios-mock-adapter": "^1.9.0",
     "bootstrap": "^3.3.7",
     "bootstrap-sass": "^3.3.7",
     "jquery": "^3.1.1",
     "jquery-ui": "^1.12.1",
     "nuxt": "^1.0.0-rc11",
-    "vue-i18n": "^7.3.0",
     "select2": "^4.0.4",
     "select2-bootstrap-theme": "0.1.0-beta.10",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "vue-i18n": "^7.3.0"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
