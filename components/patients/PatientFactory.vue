@@ -8,11 +8,11 @@
   import ListComponent from './ListComponent.vue'
   import {mapState} from 'vuex'
   export default {
-    components: {FormComponent, Listcomponent},
+    components: {FormComponent, ListComponent},
     computed: {
-      ...mapState ('patients',['mode']),
+      ...mapState('patients', ['mode']),
       currentComponent () {
-        if(this.mode==='listMode') {
+        if (this.mode === 'listMode') {
           return ListComponent
         }else {
           return FormComponent
