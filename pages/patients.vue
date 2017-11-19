@@ -1,12 +1,13 @@
 <template>
- <Patient-Factory/>
+ <patient-factory/>
+
 </template>
 
 <script>
   import PatientFactory from '../components/patients/PatientFactory.vue'
 
   export default {
-    component: {PatientFactory}
+    components: {PatientFactory}
   }
 </script>
 
