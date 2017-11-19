@@ -1,6 +1,5 @@
 <template>
-    <component :is="currentComponent">
-    </component>
+    <component :is="currentComponent"></component>
 </template>
 
 <script>
@@ -14,7 +13,7 @@
       currentComponent () {
         if (this.mode === 'listMode') {
           return ListComponent
-        }else {
+        } else {
           return FormComponent
         }
       }

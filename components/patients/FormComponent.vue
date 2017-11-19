@@ -1,5 +1,6 @@
 <template>
-formComponent
+    <div>formComponent</div>
+
 </template>
 
 <script>

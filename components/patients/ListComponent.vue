@@ -1,5 +1,7 @@
 <template>
-listComponent
+<div>
+    listComponent
+</div>
 </template>
 
 <script>
