@@ -1,4 +1,4 @@
-const state = () => ({
+export const state = () => ({
   specialServicesList: [],
   specialServicesUser: -1,
   structureId: 3,
@@ -6,7 +6,7 @@ const state = () => ({
   userLanguageCode: 'IT'
 })
 
-const mutations = {
+export const mutations = {
   setSpecialservicesList (state, payload) {
     state.specialServiceList = payload
   },
@@ -24,10 +24,10 @@ const mutations = {
   }
 }
 
-const actions = {
+export const actions = {
   loadSpecialservicesList ({commit, dispatch}) {
     return dispatch('api/get', {url: '/specialservices'})
-      .then (response => {
+      .then(response => {
         commit('setSpecialServicesList', response.data)
         dispatch('setSpecialServicesUser', 4)
         return response
@@ -38,6 +38,6 @@ const actions = {
   }
 }
 
-const getters = {
+export const getters = {
   getSpecialServicesUser: state => state.specialServicesList[state.specialServicesUser]
 }

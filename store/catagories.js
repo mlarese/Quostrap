@@ -1,4 +1,4 @@
-const state = () => ({
+export const state = () => ({
   categoryList: [],
   currentCategory: -1,
   shopID: 2,
@@ -6,12 +6,13 @@ const state = () => ({
   partnerId: -1
 })
 
-const mutations = {
+export const mutations = {
   setCategoryList (state, payload) {
     state.categoryList = payload
-},setCurrentCategory (state, payload) {
+  },
+  setCurrentCategory (state, payload) {
     state.currentCategory = payload
-},
+  },
   setShopId (state, payload) {
     state.shopID = payload
   },
@@ -23,16 +24,16 @@ const mutations = {
   }
 }
 
-const actions = {
-loadCategoryList ({commit, dispatch}) {
-  return dispatch('api/get', {url: '/categories'})
-    .then (response => {
-      commit ('setCategoryList', response.data)
-      dispatch ('defineCurrentCategery', 2)
-      return response
-    })
-},
+export const actions = {
+  loadCategoryList ({commit, dispatch}) {
+    return dispatch('api/get', {url: '/categories'})
+      .then(response => {
+        commit('setCategoryList', response.data)
+        dispatch('defineCurrentCategery', 2)
+        return response
+      })
+  },
   defineCurrentCategory ({commit, dispatch, state}, index) {
-  commit('setCurrentCategory', index)
+    commit('setCurrentCategory', index)
   }
 }

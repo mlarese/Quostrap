@@ -1,29 +1,29 @@
-const state = () => ({
-    productsList: [],
-    productsSpecification: -1,
-    loading: false
+export const state = () => ({
+  productsList: [],
+  productsSpecification: -1,
+  loading: false
 })
 
-const mutations = {
+export const mutations = {
   setProductsList (state, payload) {
     state.productsList = payload
   },
   setProductsSpecification (state, payload) {
     state.productsSpecification = payload
   },
-  setLoading (state,payload) {
+  setLoading (state, payload) {
     state.loading = payload
   }
 }
 
-const actions = {
+export const actions = {
   loadProductsList ({commit, dispatch}) {
-    dispatch ('defineLoading', true)
-    return dispatch ('api/get', {url: '/products'})
+    dispatch('defineLoading', true)
+    return dispatch('api/get', {url: '/products'})
       .then(response => {
-        commit ('productsList', response.data)
-        dispatch ('defineLoading', false)
-        dispatch ('defineProductsSpecification', 2)
+        commit('productsList', response.data)
+        dispatch('defineLoading', false)
+        dispatch('defineProductsSpecification', 2)
       })
   },
   defineLoading ({commit, dispatch}) {
@@ -34,6 +34,6 @@ const actions = {
   }
 }
 
-const getters = {
+export const getters = {
   getProductsSpecification: state => state.productsList[state.productsSpecification]
 }

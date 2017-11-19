@@ -5,4 +5,3 @@ export const posts = [
   {userName: 'lucifer', userSurname: 'morning star', details: 'you received a like from jesus'},
   {userName: 'rafeal', userSurname: 'aposto', details: 'you received a like from julie'}
 ]
-

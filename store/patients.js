@@ -1,4 +1,4 @@
-const state = () => ({
+export const state = () => ({
   list: [],
   search: '',
   orderBy: 'surname',
@@ -6,7 +6,7 @@ const state = () => ({
   mode: 'listMode'
 })
 
-const mutations = {
+export const mutations = {
   setList (state, payLoad) {
     state.list = payLoad
   },
@@ -24,15 +24,14 @@ const mutations = {
   }
 }
 
-const actions = {
-  search({commit,dispatch}) {
-    return dispatch ('api/get', {url: '/patients'})
+export const actions = {
+  search ({commit, dispatch}) {
+    return dispatch('api/get', {url: '/patients'})
       .then(response => {
         commit('setList', response.data)
-        }
-      )
+      })
   },
-  add({commit,dispatch}) {
+  add ({commit, dispatch}) {
     const emptyRecord = {
       name: '',
       surname: '',
@@ -41,22 +40,21 @@ const actions = {
       birthday: '',
       language: ''
     }
-    commit('setRecord',emptyRecord)
+    commit('setRecord', emptyRecord)
     commit('setMode', 'addMode')
   },
-  cancel({commit}) {
+  cancel ({commit}) {
     commit('setMode', 'listMode')
   },
-  edit({commit, dispatch}, record) {
+  edit ({commit, dispatch}, record) {
     commit('setRecord', record)
     commit('setRecord', 'editMode')
   },
-  save({commit,dispatch,state}){
-    if(state.mode === 'editMode') {
-      return dispatch ('api/post', {url: '/patients'}, state.record)
+  save ({commit, dispatch, state}) {
+    if (state.mode === 'editMode') {
+      return dispatch('api/post', {url: '/patients'}, state.record)
     } else {
-      return dispatch ('api/put', {url: 'patients'}, state.record)
+      return dispatch('api/put', {url: 'patients'}, state.record)
     }
   }
 }
-

@@ -1,10 +1,10 @@
-const state = () => ({
+export const state = () => ({
   productsList: [],
   currentProduct: -1,
   userLanguageCode: 'en'
 })
 
-const mutations = {
+export const mutations = {
   setProductsList (state, payload) {
     state.productsList = payload
   },
@@ -16,19 +16,16 @@ const mutations = {
   }
 }
 
-const actions = {
+export const actions = {
   loadProductsList ({commit, dispatch}) {
-    return dispatch ('api/get', {url: '/products1'})
-      .then (response => {
-        commit ('setProductsList', response.data)
-        dispatch ('defineCurrentProduct', 4)
+    return dispatch('api/get', {url: '/products1'})
+      .then(response => {
+        commit('setProductsList', response.data)
+        dispatch('defineCurrentProduct', 4)
         return response
-        }
-      )
-
+      })
   },
   defineCurrentProduct ({commit, dispatch, state}, index) {
     commit('setCurrentroduct', index)
   }
 }
-

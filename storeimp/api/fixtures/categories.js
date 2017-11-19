@@ -11,7 +11,7 @@ export const categories = [
     'description': 'dddddd',
     'shortDescription': 'dd',
     'order': 0
-  },{
+  }, {
     'id': 2,
     'code': 'A34',
 
@@ -23,7 +23,7 @@ export const categories = [
     'description': 'He is a dick',
     'shortDescription': 'dark guy',
     'order': 23
-  },{
+  }, {
     'id': 2,
     'code': '3',
 
@@ -35,7 +35,7 @@ export const categories = [
     'description': 'gh for lyf',
     'shortDescription': 'big head',
     'order': 86
-  },{
+  }, {
     'id': 56,
     'code': '74',
 
@@ -47,7 +47,7 @@ export const categories = [
     'description': 'shawa wale',
     'shortDescription': 'rasta fella',
     'order': 76
-  },{
+  }, {
     'id': 46,
     'code': '87',
 

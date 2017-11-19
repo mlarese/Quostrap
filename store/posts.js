@@ -1,10 +1,10 @@
-const state = () => ({
+export const state = () => ({
   postList: [],
   loading: false,
   currentPost: -1
 })
 
-const mutations = {
+export const mutations = {
   setPostList (state, payLoad) {
     state.postList = payLoad
   },
@@ -13,29 +13,27 @@ const mutations = {
   },
   setCurrentPost (state, payLoad) {
     state.currentPost = payLoad
-  },
-
+  }
 }
 
-const actions = {
+export const actions = {
   loadPostList ({commit, dispatch}) {
     dispatch('defineLoading', true)
     return dispatch('api/get', {url: '/posts'})
       .then(response => {
-        commit ('postList', response.data)
+        commit('postList', response.data)
         dispatch('defineLoading', false)
         dispatch('defineCurrentPost', 2)
-    })
-
+      })
   },
   defineLoading ({commit, dispatch}) {
-    commit('setLoading', false )
+    commit('setLoading', false)
   },
-  defineCurrentPost ({commit, dispatch},index) {
-    commit ('setCurrentPost', index)
+  defineCurrentPost ({commit, dispatch}, index) {
+    commit('setCurrentPost', index)
   }
 }
 
-const getters = {
+export const getters = {
   getCurrentPost: state => state.postList[state.currentPost]
 }
