@@ -1,21 +1,28 @@
 const state = () => ({
   userList: [],
-  currentUser: {}
+  currentUser: -1
 })
 
 const mutations = {
   setUserList (state, payLoad) {
     state.userList = payLoad
+  },
+  setCurrentUser (state, payLoad) {
+    state.currentUser = payLoad
   }
 }
 
 const actions = {
  loadUserList ({commit, dispatch}) {
-   const loadedUsers = [
-     {name: 'Courage', surname: 'Larese', birthDate: '1991-05-24'},
-     {name: 'Juliet', surname: 'Larese', birthDate: '1993-01-27'},
-     {name: 'Sophia', surname: 'Larese', birthDate: '1975-05-19'}
-   ]
-   commit('setUserList', loadedUsers)
+   return dispatch('api/get', {url: '/users'})
+     .then(response => {
+       commit('setUserList', response.data)
+       dispatch('defineCurrentUser', 0)
+       return response
+     })
+
+ },
+ defineCurrentUser ({commit, dispatch, state}, index) {
+   commit('setCurrentUser', index)
  }
 }

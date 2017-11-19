@@ -1,23 +1,23 @@
 import MockAdapter from 'axios-mock-adapter'
 import axios from 'axios'
-import {productsFn, servicesFn, products} from './fixtures/products'
-import {categories} from './fixtures/categories'
-import {flowSetup, structureConfig} from './fixtures/booking'
-import {cart, cartPost} from './fixtures/cart'
+import {users} from './fixtures/users'
+import {products} from './fixtures/products'
+import {posts} from './fixtures/posts'
+import {catagories} from './fixtures/catagories'
+import {specialservices} from './fixtures/specialservices'
+import {products1} from './fixtures/products1'
+import {patients} from './fixtures/patients'
 
 const mock = new MockAdapter(axios, {delayResponse: 300})
 
 mock
-  .onGet('/catalog/partner/categories').reply(config => [200, categories])
-  .onGet('/catalog/partner/categories/1').reply(config => [200, categories.find(c => c.id === 1)])
-  .onGet('/booking/cart').reply(config => [200, cart])
-  .onPost('/booking/cart').reply(cartPost)
-  .onGet('/booking/specialservices').reply(servicesFn)
-  .onGet('/catalog/products').reply(productsFn)
-  .onGet('/booking/specialservices/1').reply(config => [200, products.find(p => (p.id === 1 && p.type === 'specialservice'))])
-  .onGet('/catalog/products/1').reply(config => [200, products.find(p => (p.id === 1 && p.type === 'simple'))])
-  .onGet('/booking/flowSetup').reply(config => [200, flowSetup])
-  .onGet('/booking/config').reply(config => [200, structureConfig])
+  .onGet('/users').reply(config => [200, users])
+  .onGet('/products').reply(config => [200, products])
+  .onGet('/posts').reply(config => [200, posts])
+  .onGet('/catagories').reply(config => [200, catagories])
+  .onGet('/specialservices').reply(config => [200, specialservices])
+  .onGet('/products1').reply(config => [200, products1])
+  .onGet('/patients').reply(config => [200, patients])
   .onGet('/testerror500').reply(500)
   .onGet('/testerror403').reply(403)
   .onGet('/testtimeout').timeout()
