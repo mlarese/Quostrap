@@ -1,11 +1,15 @@
 <template>
-    <div>formComponent</div>
-
+    <div>formComponent
+        <button @click="cancel">Cancel</button>
+    </div>
 </template>
 
 <script>
+  import {mapActions} from 'vuex'
   export default {
-    props: []
+    methods: {
+      ...mapActions('patients', ['cancel'])
+    }
   }
 </script>
 

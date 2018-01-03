@@ -31,7 +31,7 @@ export const actions = {
         commit('setList', response.data)
       })
   },
-  add ({commit, dispatch}) {
+  add ({commit}) {
     const emptyRecord = {
       name: '',
       surname: '',
@@ -51,6 +51,7 @@ export const actions = {
     commit('setRecord', 'editMode')
   },
   save ({commit, dispatch, state}) {
+    commit('setList', 'addMode')
     if (state.mode === 'editMode') {
       return dispatch('api/post', {url: '/patients'}, state.record)
     } else {
